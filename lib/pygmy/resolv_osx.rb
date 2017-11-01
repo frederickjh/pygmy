@@ -9,7 +9,7 @@ module Pygmy
     end
 
     def self.resolver_file
-      "/etc/resolver/docker.amazee.io"
+      "/etc/resolver/docker.topdroplabs.com"
     end
 
     def self.create_resolver?

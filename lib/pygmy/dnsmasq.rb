@@ -13,7 +13,7 @@ module Pygmy
     end
 
     def self.domain
-      'docker.amazee.io'
+      'docker.topdroplabs.com'
     end
 
     def self.addr

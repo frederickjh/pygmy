@@ -14,7 +14,7 @@ class PygmyBin < Thor
 
     When run, there will be two docker containers started:
 
-    - dnsmasq: to resolve DNS requests for your the domain *.docker.amazee.io
+    - dnsmasq: to resolve DNS requests for your the domain *.docker.topdroplabs.com
 
     - haproxy: to forward HTTP and HTTPs requests to the docker containers running Drupal.
 
@@ -24,8 +24,8 @@ class PygmyBin < Thor
     On Linux: The local resolver (/etc/resolv.conf) will be configured to use the dnsmasq
     instance as a nameserver.
 
-    On Mac: A resolver file (/etc/resolver/docker.amazee.io) will be created to use the dnsmasq
-    instance as a nameserver for all *.docker.amazee.io domains.
+    On Mac: A resolver file (/etc/resolver/docker.topdroplabs.com) will be created to use the dnsmasq
+    instance as a nameserver for all *.docker.topdroplabs.com domains.
 
     > $ pygmy up
   LONGDESC
