@@ -22,7 +22,7 @@ module Pygmy
 
     def self.run_cmd(domain = self.domain, addr = self.addr)
       "docker run -d -p 53:53/tcp -p 53:53/udp --name=#{Shellwords.escape(self.container_name)} " \
-      "--cap-add=NET_ADMIN #{Shellwords.escape(self.image_name)} -A /#{Shellwords.escape(domain)}/#{Shellwords.escape(addr)}"
+      "--cap-add=NET_ADMIN #{Shellwords.escape(self.image_name)} -A /#{Shellwords.escape(domain)}/#{Shellwords.escape(addr)} -A /docker.amazee.io/127.0.0.1"
     end
   end
 end
