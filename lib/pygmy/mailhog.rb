@@ -9,11 +9,11 @@ module Pygmy
     end
 
     def self.container_name
-      'mailhog.docker.topdroplabs.com'
+      'mailhog.dev.topdroplabs.com'
     end
 
     def self.domain
-      'docker.topdroplabs.com'
+      'dev.topdroplabs.com'
     end
 
     def self.addr
