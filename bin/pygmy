@@ -117,11 +117,12 @@ class PygmyBin < Thor
 
   def exec_up(options)
 
-    if Pygmy::Dnsmasq.start
-      puts "Successfully started dnsmasq".green
-    else
-      puts "Error starting dnsmasq".red
-    end
+# Shuting off the dnsmasq container, as we are running one locally that also resolve dns for the outside world too.
+#    if Pygmy::Dnsmasq.start
+#      puts "Successfully started dnsmasq".green
+#    else
+#      puts "Error starting dnsmasq".red
+#    end
 
     if Pygmy::Haproxy.start
       puts "Successfully started haproxy".green
